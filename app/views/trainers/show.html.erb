@@ -8,10 +8,9 @@
   <% @trainer.pokemons.each do |pokemon| %>
   	<ol>
     <li><%= pokemon.name %></li>
-    		<ul>
-    		<li> Level: <%= pokemon.level %> </li>
-    		<li> Health: <%= pokemon.health %> </li>
-    		<%= button_to "Damage!", damage_path(id: pokemon), :class => "button small", :method => :patch %>
+    		<ul> 
+        <!-- make this buttom "Done!" for completed tasks -->
+    		<%= button_to "Damage!", damage_path(id: pokemon), :class => "button small", :method => :patch %> 
     		</ul>
     </ol>
   <% end %>
