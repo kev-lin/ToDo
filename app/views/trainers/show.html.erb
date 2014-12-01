@@ -1,17 +1,15 @@
-<h3>Trainer</h3>
+<h3>Projects</h3>
 <p>Name: <%= @trainer.name if @trainer.name %></p>
-<p>Email: <%= @trainer.email if @trainer.email %></p>
 <% if @trainer == current_trainer %>
-	<%= button_to "Create a Pokemon!", new_path, :class => "button small", :method => :get %>
+	<%= button_to "Create a task!", new_path, :class => "button small", :method => :get %>
 <% end %>
 <p>Pokemons:</p>
   <% @trainer.pokemons.each do |pokemon| %>
   	<ol>
     <li><%= pokemon.name %></li>
-    		<ul>
-    		<li> Level: <%= pokemon.level %> </li>
-    		<li> Health: <%= pokemon.health %> </li>
-    		<%= button_to "Damage!", damage_path(id: pokemon), :class => "button small", :method => :patch %>
+    		<ul> 
+        <!-- make this buttom "Done!" for completed tasks -->
+    		<%= button_to "Done!", damage_path(id: pokemon), :class => "button small", :method => :patch %> 
     		</ul>
     </ol>
   <% end %>
