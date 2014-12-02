@@ -1,9 +1,8 @@
-<h3>Projects</h3>
-<p>Name: <%= @trainer.name if @trainer.name %></p>
+<h3><%= @trainer.name if @trainer.name %></h3>
 <% if @trainer == current_trainer %>
-	<%= button_to "Create a task!", new_path, :class => "button small", :method => :get %>
+	<%= button_to "Create a Task!", new_path, :class => "button small", :method => :get %>
 <% end %>
-<p>Pokemons:</p>
+<p>Tasks:</p>
   <% @trainer.pokemons.each do |pokemon| %>
   	<ol>
     <li><%= pokemon.name %></li>
