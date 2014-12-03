@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   patch '/pokemons/capture', to: 'pokemons#capture', as: 'capture'
   patch '/pokemons/damage', to: 'pokemons#damage', as: 'damage'
   post '/pokemons/create', to: 'pokemons#create', as: 'create'
-  get '/pokemons/new', to: 'pokemons#new', as: 'new'
+  get '/pokemons/new', to: 'pokemons#new', as:
 end
