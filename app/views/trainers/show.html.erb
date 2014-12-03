@@ -1,13 +1,10 @@
 <h3><%= @trainer.name if @trainer.name %></h3>
-<% if @trainer == current_trainer %>
-	<%= button_to "Create a Task!", new_path, :class => "button small", :method => :get %>
-<% end %>
+<%= button_to "Create a Task!", new_path, :class => "button small", :method => :get %>
 <p>Tasks:</p>
   <% @trainer.pokemons.each do |pokemon| %>
   	<ol>
     <li><%= pokemon.name %></li>
     		<ul> 
-        <!-- make this buttom "Done!" for completed tasks -->
     		<%= button_to "Done!", damage_path(id: pokemon), :class => "button small", :method => :patch %> 
     		</ul>
     </ol>
