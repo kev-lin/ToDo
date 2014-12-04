@@ -5,9 +5,11 @@
       <table class="table">
         <tbody>
           <% @trainers.each do |trainer| %>
-            <tr>
-              <%= render trainer %>
-            </tr>
+            <% if trainer != current_trainer %>
+              <tr>
+                <%= render trainer %>
+              </tr>
+            <% end %>
           <% end %>
         </tbody>
       </table>

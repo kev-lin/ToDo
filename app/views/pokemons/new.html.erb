@@ -3,3 +3,8 @@
   Task: <%= f.input :name %>
   <%= f.button :submit, 'Create Task!' %>
 <% end %>
+
+<p>List of Deleted Tasks:</p>
+  	<% Pokemon.only_deleted.each do |pokemon| %>
+	    <li><%= pokemon.name %></li>
+<% end %>
