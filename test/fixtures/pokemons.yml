@@ -9,3 +9,8 @@ two:
   name: MyString
   level: 1
   trainer_id: 1
+
+three:
+  name: MyString
+  level: 1
+  trainer_id: 1
