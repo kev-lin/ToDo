@@ -18,9 +18,11 @@ Project (Trainer)
    - Has many tasks
    - Has a title
 
+
 Task (Pokemon)
    - Belongs to projects
    - Has text
+
 
 Priorities
    - Belongs to Tasks
