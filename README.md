@@ -1,7 +1,11 @@
 #ToDo
 
 Title: ToDo
+
+
 Team Members: Kevin Lin, Victor Lu 
+
+
 Demo Link: https://todo-list-rails.herokuapp.com/
 
 
