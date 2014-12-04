@@ -11,6 +11,7 @@ gem 'spring',        group: :development
 gem 'devise'
 gem 'foundation-rails'
 gem 'simple_form'
+gem "paranoia", "~> 2.0"
 
 group :development do
   gem 'sqlite3'
