@@ -40,4 +40,6 @@ Priorities
 
 #Division of Labor:
 Kevin: implemented views, worked on project and task models, worked on routing
+
+
 Victor: incorporated paranoia gem, worked on priority model, worked on aesthetics
