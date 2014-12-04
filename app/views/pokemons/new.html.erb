@@ -1,5 +1,5 @@
 <h1> Create a Task! </h1>
 <%= simple_form_for Pokemon.new, url: {action: "create"} do |f| %>
   Task: <%= f.input :name %>
-  <%= f.button :submit %>
+  <%= f.button :submit, 'Create Task!' %>
 <% end %>
