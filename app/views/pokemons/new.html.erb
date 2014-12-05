@@ -4,7 +4,7 @@
   <%= f.button :submit, 'Create Task!' %>
 <% end %>
 
-<p>List of Deleted Tasks:</p>
+<p>List of Recently Deleted Tasks:</p>
   	<% Pokemon.only_deleted.each do |pokemon| %>
 	    <li><%= pokemon.name %></li>
-<% end %>
+	<% end %>
