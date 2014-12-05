@@ -22,13 +22,6 @@ class PokemonsController < ApplicationController
 		redirect_to root_path
 	end
 
-	def destroyer
-		@pokemon = Pokemon.find(params[:id])
-		@trainer = @pokemon.trainer_id
-		@pokemon.restore(id)
-		redirect_to trainer_path(@trainer)
-	end
-
 	def damage
 		@pokemon = Pokemon.find(params[:id])
 		@trainer = @pokemon.trainer_id
