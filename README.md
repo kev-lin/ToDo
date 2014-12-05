@@ -36,10 +36,10 @@ Priorities
    - Users can remove tasks after completion
 - Uses the Paranoia gem to keep track of deleted tasks
    - Displays previously deleted tasks to keep track of progress
-#Planned Future Features:
-- Ability to restore deleted tasks back to the project (like Google Tasks)
-- Changes to deleted tasks to limit number shown
-- Sorting based on priority
+-Future Plans
+   - Ability to restore deleted tasks back to the project (like Google Tasks)
+   - Changes to deleted tasks to limit number shown
+   - Sorting based on priority
 
 #Division of Labor:
 Kevin: implemented views, worked on project and task models, worked on routing
